@@ -1,0 +1,9 @@
+.tooltip {
+  &__contact {
+    color: $home-color;
+    font-weight: 700;
+    font-style: Bold;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+}
