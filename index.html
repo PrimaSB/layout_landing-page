@@ -48,14 +48,18 @@
             </a>
 
             <div class="top-bar__icons">
-              <a href="tel:+1 212-535-7710" class="icon icon--phone">
+              <div class="icon icon--phone">
                 <div class="icon__tooltip">
-                  <span class="tooltip__contact">The Met Fifth Avenue</span>
-                  <span class="tooltip__contact">+1 212-535-7710</span>
-                  <span class="tooltip__contact">The Met Cloisters</span>
-                  <span class="tooltip__contact">+1 212-923-3700</span>
+                  <div class="tooltip__group">
+                    <span class="tooltip__contact">The Met Fifth Avenue</span>
+                    <a class="tooltip__contact" href="tel:+1 212-535-7710">+1 212-535-7710</a>
+                  </div>
+                  <div class="tooltip__group">
+                    <span class="tooltip__contact">The Met Cloisters</span>
+                    <a class="tooltip__contact" href="tel:+1 212-923-3700">+1 212-923-3700</a>
+                  </div>
                 </div>
-              </a>
+              </div>
 
               <a href="#menu" class="icon icon--menu"></a>
             </div>
@@ -320,15 +324,18 @@
                 <input
                   type="text"
                   placeholder="Name"
-                  class="contacts__input">
+                  class="contacts__input"
+                  required>
                 <input
                   type="email"
                   placeholder="Email"
-                  class="contacts__input">
+                  class="contacts__input"
+                  required>
                 <textarea
                   type="text"
                   placeholder="Message"
-                  class="contacts__input contacts__input--long"></textarea>
+                  class="contacts__input contacts__input--long"
+                  required></textarea>
                 <button type="submit" class="contacts__button">Send</button>
               </form>
             </div>

@@ -15,12 +15,12 @@
     opacity: 0;
     display: inline-flex;
     flex-direction: column;
-    align-items: end;
+    gap: 8px;
     position: absolute;
     right: 90px;
     width: 300px;
-    top: -120%;
-    pointer-events: none;
+    top: -130%;
+    pointer-events: auto;
     transition:
       opacity $animation-time ease,
       transform $animation-time ease;
@@ -29,10 +29,13 @@
   &--phone {
     position: relative;
     background-image: url(/src/images/icons/Icon-Phone-call.svg);
+    // cursor: pointer;
 
-    &:hover .icon__tooltip {
-      opacity: 1;
-      transform: translateY(0) translateX(15%);
+    @include on-desktop {
+      &:hover .icon__tooltip {
+        opacity: 1;
+        transform: translateY(0) translateX(15%);
+      }
     }
   }
 
